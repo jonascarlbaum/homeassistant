@@ -1,0 +1,30 @@
+alarm_control_panel.tegelvagen_alarm:
+  friendly_name: Kontrollpanel
+binary_sensor.altan:
+  friendly_name: Altandörr
+  sensor_class: opening
+  device_class: door
+binary_sensor.entre:
+  friendly_name: Entrédörr
+  sensor_class: opening
+  device_class: door
+binary_sensor.tvattstuga:
+  friendly_name: Tvättstugedörr
+  sensor_class: opening
+  device_class: door
+sensor.kok_temperature:
+  friendly_name: "Temperatur i kök"
+sensor.sovrum_humidity:
+  friendly_name: "Luftfuktighet i sovrum"
+sensor.sovrum_temperature:
+  friendly_name: "Temperatur i sovrum"
+sensor.vardagsrum_humidity:
+  friendly_name: "Luftfuktighet i vardagsrum"
+sensor.vardagsrum_temperature:
+  friendly_name: "Temperatur i vardagsrum"
+sensor.yr_symbol:
+  friendly_name: "Väder enligt YR.no"
+sun.sun:
+  friendly_name: Sol
+device_tracker.jonasiphone:
+  friendly_name: Jonas iPhone

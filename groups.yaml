@@ -1,0 +1,82 @@
+default_view:
+  view: yes
+  icon: mdi:home
+  entities:
+#    - group.verisure
+    - group.alarm_controls
+    - group.kitchen
+    - group.living_room
+    - group.bedroom
+    - group.entrances
+    - group.weather
+    - group.media_players
+    - group.all_devices
+    - group.ios
+verisure:
+  name: Verisure
+  entities:
+    - group.alarm_controls
+    - group.kitchen
+    - group.living_room
+    - group.bedroom
+    - group.entrances
+weather:
+  name: Väder
+  entities:
+    - sensor.yr_symbol
+    - sun.sun
+kitchen:
+  name: Kök
+  entities:
+    - sensor.kok_temperature
+living_room:
+   name: Vardagsrum
+   entities:
+     - sensor.vardagsrum_temperature
+     - sensor.vardagsrum_humidity
+bedroom:
+  name: Sovrum
+  entities:
+    - sensor.sovrum_temperature
+    - sensor.sovrum_humidity
+entrances:
+  name: Dörrar och fönster
+  entities:
+    - binary_sensor.entre
+    - binary_sensor.tvattstuga
+    - binary_sensor.altan
+alarm_controls:
+  name: Larmcentral
+  entities:
+    - alarm_control_panel.tegelvagen_alarm
+
+media_players:
+  name: Mediaspelare
+  entities:
+    - media_player.samsung_led46_ue46f6500
+    - group.apple_tv_i_kontor
+    - group.apple_tv_i_vardagsrum
+
+apple_tv_i_kontor:
+  name: Apple TV i kontor
+  entities:
+    - media_player.apple_tv_i_kontor
+    - remote.apple_tv_i_kontor
+
+apple_tv_i_vardagsrum:
+  name: Apple TV i vardagsrum
+  entities:
+    - media_player.apple_tv_i_vardagsrum
+    - remote.apple_tv_i_vardagsrum
+
+ios:
+  name: iOS
+  entities:
+    - group.jonas_iphone
+
+jonas_iphone:
+  name: Jonas iPhone
+  entities:
+    - device_tracker.jonasiphone
+    - sensor.jonasiphone_battery_level
+    - sensor.jonasiphone_battery_state
